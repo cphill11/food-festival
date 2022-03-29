@@ -1,5 +1,6 @@
 // name of this file is required for webpack to fxn
 
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const webpack = require("webpack");
 const path = require("path");
 
@@ -12,12 +13,15 @@ module.exports = {
     path: path.join(__dirname + "/dist"),
     filename: "main.bundle.js",
   },
-  // plugin directs webpack for task completion (using the jquery library)
+  // plugin directs webpack for task completion (configured to use the jquery library)
   plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
     }),
+    new BundleAnalyzerPlugin({
+      analyzerMode: "static", // the report outputs to an HTML file in the dist folder (report.html)
+    })
   ],
   // default mode is "production"
   mode: "development",
