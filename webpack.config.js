@@ -7,11 +7,16 @@ const path = require("path");
 module.exports = {
   // basic configuration requires 3 properties (entry, output, mode)
   // entry is declared first, provides relative path to client's code
-  entry: "./assets/js/script.js",
+  entry: {
+    app: "./assets/js/script.js",
+    events: "./assets/js/events.js",
+    schedule: "./assets/js/schedule.js",
+    tickets: "./assets/js/tickets.js"
   // webpack takes code from entry, bundles it, and pushes the bundled code as output; bundled code will be in distr directory
+  },
   output: {
-    path: path.join(__dirname + "/dist"),
-    filename: "main.bundle.js",
+    filename: "[name].bundle.js",
+    path: __dirname + "/dist",
   },
   // plugin directs webpack for task completion (configured to use the jquery library)
   plugins: [
