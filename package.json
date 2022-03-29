@@ -1,0 +1,25 @@
+{
+  "name": "food-festival",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cphill11/food-festival.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cphill11/food-festival/issues"
+  },
+  "homepage": "https://github.com/cphill11/food-festival#readme",
+  "keywords": [],
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}
