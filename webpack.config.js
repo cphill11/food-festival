@@ -12,6 +12,7 @@ module.exports = {
     path: path.join(__dirname + "/dist"),
     filename: "main.bundle.js",
   },
+  // plugin directs webpack for task completion (using the jquery library)
   plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",
