@@ -18,6 +18,20 @@ module.exports = {
     filename: "[name].bundle.js",
     path: __dirname + "/dist",
   },
+  module: {
+    rules: [
+      {
+        // looking for any img file w/ extension .jpg
+        test: /\.jpg$/i,
+        use: [
+          {
+            // implements actual loader
+            loader: 'file-loader'
+          }
+        ]
+      }
+    ]
+  },
   // plugin directs webpack for task completion (configured to use the jquery library)
   plugins: [
     new webpack.ProvidePlugin({
