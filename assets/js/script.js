@@ -1,4 +1,6 @@
 require("bootstrap");
+const img1 = require("../../assets/img/food-table-min.jpg");
+const img2 = require("../../assets/img/grill-min.jpg");
 
 $(document).ready(function() {
   // First image is hard coded in index.html
