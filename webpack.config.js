@@ -12,12 +12,12 @@ module.exports = {
     path: path.join(__dirname + "/dist"),
     filename: "main.bundle.js",
   },
-//   plugins: [
-//     new webpack.ProvidePlugin({
-//       $: "jquery",
-//       jQuery: "jquery",
-//     }),
-//   ],
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+    }),
+  ],
   // default mode is "production"
   mode: "development",
 };
