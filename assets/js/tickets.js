@@ -1,5 +1,5 @@
 require('bootstrap');
-const createEl = require("./domMethods");
+// const createEl = require("./domMethods");
 
 if (window.location.href.indexOf("tickets") > -1) {
 
