@@ -15,7 +15,7 @@
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\nconst img1 = __webpack_require__(/*! ../../assets/img/food-table-min.jpg */ \"./assets/img/food-table-min.jpg\");\nconst img2 = __webpack_require__(/*! ../../assets/img/grill-min.jpg */ \"./assets/img/grill-min.jpg\");\n\n$(document).ready(function() {\n  // First image is hard coded in index.html\n  const carouselSlides = [\n    {\n      title: \"We travel all over the US\",\n      subtitle: \"Check out our schedule!\",\n      img: \"./assets/img/food_table.jpg\",\n      btnText: \"View Schedule\",\n      btnUrl: \"schedule.html\"\n    },\n    {\n      title: \"Our food is seriously the bomb!\",\n      subtitle: \"What are you waiting for?\",\n      img: \"./assets/img/grill.jpg\",\n      btnText: \"Purchase Tickets\",\n      btnUrl: \"tickets.html\"\n    },\n  ]\n\n  carouselSlides.forEach((slide, i) => {\n    $('.carousel-inner').append(`\n  <div class=\"carousel-item fullscreen-carousel\" style=\"background-image: url('${slide.img}')\">\n    <div class=\"d-flex h-100 align-items-center justify-content-center carousel-caption\">\n        <div class=\"container\">\n          <div class=\"row align-items-center justify-content-center\">\n              <h2 class=\"display-4 mb-2\">${slide.title}</h2>\n          </div>\n          <div class=\"row align-items-center justify-content-center\"> \n            <h3>${slide.subtitle}</h3>\n          </div>\n          <div class=\" mt-4 row align-items-center justify-content-center\"> \n            <a class=\"btn btn-primary\" href=\"${slide.btnUrl}\">\n                ${slide.btnText}\n            </a>\n          </div>\n        </div>\n    </div>\n  </div>`)\n  })\n});\n\n//# sourceURL=webpack://food-festival/./assets/js/script.js?");
+eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\nconst img1 = __webpack_require__(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module '../img/food-tablejpg'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));\nconst img2 = __webpack_require__(/*! ../img/grill.jpg */ \"./assets/img/grill.jpg\");\n\n$(document).ready(function() {\n  // First image is hard coded in index.html\n  const carouselSlides = [\n    {\n      title: \"We travel all over the US\",\n      subtitle: \"Check out our schedule!\",\n      img: img1,\n      btnText: \"View Schedule\",\n      btnUrl: \"schedule.html\"\n    },\n    {\n      title: \"Our food is seriously the bomb!\",\n      subtitle: \"What are you waiting for?\",\n      img: img2,\n      btnText: \"Purchase Tickets\",\n      btnUrl: \"tickets.html\"\n    },\n  ]\n\n  carouselSlides.forEach((slide, i) => {\n    $('.carousel-inner').append(`\n  <div class=\"carousel-item fullscreen-carousel\" style=\"background-image: url('${slide.img}')\">\n    <div class=\"d-flex h-100 align-items-center justify-content-center carousel-caption\">\n        <div class=\"container\">\n          <div class=\"row align-items-center justify-content-center\">\n              <h2 class=\"display-4 mb-2\">${slide.title}</h2>\n          </div>\n          <div class=\"row align-items-center justify-content-center\"> \n            <h3>${slide.subtitle}</h3>\n          </div>\n          <div class=\" mt-4 row align-items-center justify-content-center\"> \n            <a class=\"btn btn-primary\" href=\"${slide.btnUrl}\">\n                ${slide.btnText}\n            </a>\n          </div>\n        </div>\n    </div>\n  </div>`)\n  })\n});\n\n//# sourceURL=webpack://food-festival/./assets/js/script.js?");
 
 /***/ }),
 
@@ -29,23 +29,13 @@ eval("/*!\n  * Bootstrap v4.6.1 (https://getbootstrap.com/)\n  * Copyright 2011-
 
 /***/ }),
 
-/***/ "./assets/img/food-table-min.jpg":
-/*!***************************************!*\
-  !*** ./assets/img/food-table-min.jpg ***!
-  \***************************************/
+/***/ "./assets/img/grill.jpg":
+/*!******************************!*\
+  !*** ./assets/img/grill.jpg ***!
+  \******************************/
 /***/ ((module) => {
 
-eval("module.exports = \"assets/img/food-table-min.jpg\";\n\n//# sourceURL=webpack://food-festival/./assets/img/food-table-min.jpg?");
-
-/***/ }),
-
-/***/ "./assets/img/grill-min.jpg":
-/*!**********************************!*\
-  !*** ./assets/img/grill-min.jpg ***!
-  \**********************************/
-/***/ ((module) => {
-
-eval("module.exports = \"assets/img/grill-min.jpg\";\n\n//# sourceURL=webpack://food-festival/./assets/img/grill-min.jpg?");
+eval("module.exports = \"assets/img/grill.jpg\";\n\n//# sourceURL=webpack://food-festival/./assets/img/grill.jpg?");
 
 /***/ }),
 
