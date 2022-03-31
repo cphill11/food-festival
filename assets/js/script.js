@@ -1,5 +1,5 @@
 require("bootstrap");
-const img1 = require("../img/food-tablejpg");
+const img1 = require("../img/food-table.jpg");
 const img2 = require("../img/grill.jpg");
 
 $(document).ready(function() {
