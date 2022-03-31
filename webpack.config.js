@@ -1,11 +1,10 @@
 // name of this file is required for webpack to fxn
-
-const BundleAnalyzerPlugin =
-  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const webpack = require("webpack");
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+
 const path = require("path");
 
-module.exports = {
+const config = {
   // basic configuration requires 3 properties (entry, output, mode)
   // entry is declared first, provides relative path to client's code
   entry: {
@@ -58,3 +57,5 @@ module.exports = {
   // default mode is "production"
   mode: "development",
 };
+
+module.exports = config;
