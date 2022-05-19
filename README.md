@@ -1,3 +1,3 @@
 # food-festival
 
-web link: https://cphill11.github.io/food-festival/
+web link: https://github.com/cphill11/food-festival.git
